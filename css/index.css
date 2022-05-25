@@ -1,118 +1,67 @@
-body{
+*{
   font-family: 'Space Grotesk', sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
-#myVideo {
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-.container {
-  /* Used to position the video and content */
-  position: relative;
-}
-
-.container__wrapper {
-  /* Positioned at the top left corner */
-  left: 0px;
-  position: absolute;
-  top: 0px;
-
-  /* Take full size */
-  height: 100%;
-  width: 100%;
-
-  /* Hide the scrollbar */
-  overflow: hidden;
-}
-
-.container__video {
-  object-fit: cover;
-
-  /* Center the video */
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  /* Take full width */
-  width: 100%;
-}
-
-.container__content {
-  /* Positioned at the top left corner */
-  left: 0px;
-  position: absolute;
-  top: 0px;
-
-  /* Take full size */
-  height: 100%;
-  width: 100%;
-
-  /* Center the content */
+  padding: 0 5%;
+  display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
 }
 
-h2{
-  position: relative;
+.content{
   text-align: center;
-  font-size: 90px;
-  background: rgba(0, 0, 0, 0.5);
 }
 
-b{
-  color: white;
-}
-.button {
-  border-radius: 4px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+.content h1{
+  font-size: 160px;
+  color: #fff;
+  font-weight: 600px;
+  transition: 0.5s;
 }
 
-.button span {
-  cursor: pointer;
+.content h1:hover{
+  -webkit-text-stroke:2px #fff;
+  color: black;
+}
+
+.content a{
+  text-decoration: none;
   display: inline-block;
-  position: relative;
+  color:#fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
   transition: 0.5s;
 }
+.content a:hover{
+  -webkit-text-size-adjust: 2px #fff;
+  color: black;
+  background-color: #e7e7e7
 
-.button span:after {
-  content: '\00bb';
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
 }
 
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
+#myVideo{
+  position: absolute;
   right: 0;
-}
-.container2 {
-  height: 1100px;
-  left: 50%
-  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%
 }
 
-.vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+@media (min-aspect-ratio: 16/9){
+  #myVideo{
+    width: 100%;
+    height: auto;
+  }
 }
