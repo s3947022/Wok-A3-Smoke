@@ -11,9 +11,18 @@ html{
 
 .header {
   padding: 10px 16px;
-  background: #555;
+  background: #323232;
   color: #f1f1f1;
   text-align: center;
+}
+
+.icon img{
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  top: 0px;
+  left: 0;
+  z-index: 1
 }
 
 .image{
