@@ -21,9 +21,19 @@ header {
   font-family: 'JetBrains Mono', monospace;
 }
 
+h2{
+  color: #808080;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
 .wrapper{
   width:1000px;
-  margin: 150px auto;
+  margin: 70px auto;
 }
 
 .tabs ul{
@@ -88,8 +98,29 @@ header {
   font-weight: 600;
 }
 
-.tab_content p{
+.tab_wrap .tab_content p{
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 22px;
+}
+
+.return{
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+}
+.return a{
+  text-decoration: none;
+  display: inline-block;
+  color:black;
+  font-size: 24px;
+  border: 2px solid black;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.return a:hover{
+  -webkit-text-size-adjust: 2px #fff;
+  color: black;
+  background-color: #e7e7e7
 }
