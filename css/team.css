@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html{
   background-color: #CCE2CB;
 }
@@ -21,6 +22,7 @@ h1{
   background: #555;
   color: #f1f1f1;
   text-align: center;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 img{
