@@ -102,6 +102,7 @@ h2{
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 22px;
+  font-family: 'Nunito', sans-serif;
 }
 
 .return{
@@ -123,4 +124,9 @@ h2{
   -webkit-text-size-adjust: 2px #fff;
   color: black;
   background-color: #e7e7e7
+}
+
+img{
+  width: 500px;
+  height: 100%;
 }
